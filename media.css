@@ -1,0 +1,234 @@
+@media (min-width:1440px) and (max-width:1600px)      {
+/************************page-2******************************/
+.cards{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6em;
+}
+.cards .card{
+    width: 22em;
+    height:28em ;
+    text-align: center;
+    border-radius: 1em ;
+    box-shadow: 0 0 10px white;
+    position: relative;
+    transition: all 1s;
+    background-color: rgb(0, 0, 0);
+}
+.cards .card:hover{
+    height: 35em;
+
+}
+.cards .card h2{
+    color: white;
+
+}
+.cards .card p{
+    padding: 1em;
+    line-height: 1.6;
+}
+.cards .card a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    color: white;
+    margin-top: em;
+    text-transform: capitalize;
+
+}
+.cards .card img{
+   width: 100%;
+   height: 40%;
+   object-fit: cover;
+   border-radius: 1em 1em 0 0;
+   transition: all 2s;
+   opacity: 0.8;
+
+}
+.cards .card:hover img{
+    height: 55%;
+    opacity: 1;
+}
+/************************info******************************/
+
+.info{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    margin: 4em 0;
+    position: relative;
+
+}
+
+.info .text {
+    width:200em;
+    height: 100%;
+    position: relative;
+    left: 8em;
+
+}
+.info .text h2{
+    width: fit-content;
+    font-size: 3em;  
+    text-align: left;
+    text-shadow: 0 0 15px #f5deb3;
+    text-transform: capitalize;
+    position: relative;
+   
+}
+.info .text h2::after{
+    position: absolute;
+    content:'' ;
+    left: 0%; bottom: 0;
+    width: 0%;
+    height: 0.07em;
+    background-color: white;
+    filter: blur(1px);
+    transition: width 1s;
+    
+}
+.info .text h2:hover::after{
+    width:100%;
+
+}
+
+.info  p {
+    font-size: 1.2em;
+    margin-top: 1em;
+    line-height: 1.9;
+   
+}
+.info .text p span{
+    display: inline-flex;
+  
+    font-size: 1.5em;
+    color: white;
+    margin-left: -2em;
+    margin-bottom: 0.3em;
+    position: relative;
+}
+.info .text p span:after{
+    position: absolute;
+    content: '';
+    left: 0; bottom: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: wheat;
+}
+
+
+.info  img{
+    width: 130%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    border-right:solid 3px wheat ;
+    border-radius: 1em;
+    opacity: 0.7;
+}
+
+.info .text-image{
+    text-align: center;
+    position: absolute;
+    transform: translate(50% ,60%);
+    color: rgba(0, 0, 0, 0.9);
+
+
+  
+
+}
+.info .text-image h2{
+    font-size: 3em;
+    text-shadow: 0 0 15px white;
+}
+.info .text-image p{
+    font-size: 1.5em;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.info .text-image a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    text-transform: capitalize;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 0.2em 0.5em;
+    color: rgba(0, 0, 0, 0.699);
+    margin-top: 1em;
+    border: solid 2px white;
+    box-shadow: inset 0 0 15px rgb(255, 246, 246);
+
+}
+/************************gallery******************************/
+.gellory{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3em;
+}
+.gellory .content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row; 
+   width: 100%;
+}
+.gellory .content img{
+    width: 28em;
+    height: 30em;
+    opacity: 0.4;
+    transform-origin: left ;
+    transition: opacity 2s;
+}
+.gellory .content img:hover{
+    opacity: 1;
+
+
+}
+.gellory .text{
+    background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)),  url(Black_and_white_coffee_shop_background.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 10em;
+    width: calc(28em*4);
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px wheat;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.gellory .text h2{
+    font-size: 2em;
+    margin-left: -10em;
+}
+.gellory .text a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 0.2em 0.5em;
+    color: rgb(255, 255, 255);
+    border: solid 2px  white;
+    box-shadow: inset 0 0 15px black;
+    transition: transform 1s;
+    margin-right: 3em;
+    margin-top: -0.1em;
+
+}
+.gellory .text a:hover{
+    transform: scale(1.3) ;
+}
+
+/************************quote******************************/
